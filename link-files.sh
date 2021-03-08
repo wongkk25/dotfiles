@@ -13,3 +13,6 @@ ln -sf $(pwd)/i3/config $CONFIG_DIR/i3/config
 ln -sf $(pwd)/.zshrc ~/.zshrc
 ln -sf $(pwd)/.tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/redshift/redshift.conf $CONFIG_DIR/redshift/redshift.conf
+
+echo "done"
+
