@@ -37,9 +37,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# rust
-#source $HOME/.cargo/env
-
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -48,5 +45,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # aliases
-source ~/Programming/tools/aliases
 alias vim=nvim
