@@ -71,7 +71,6 @@ autoload -U colors && colors
 PS1="%{$fg[green]%}%n@%m%{$reset_color%}:%{$fg[cyan]%}%1~%{$reset_color%} %% "
 
 {{ if eq .chezmoi.os "darwin" -}}
-source /opt/homebrew/share/zsh/site-functions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
