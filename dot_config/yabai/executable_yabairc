@@ -1,0 +1,18 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# looks
+yabai -m config \
+  layout bsp \
+  top_padding    12 \
+  bottom_padding 8 \
+  left_padding   8 \
+  right_padding  8 \
+  window_gap     20 \
+  window_shadow float \
+  focus_follows_mouse autoraise 
+  window_animation_duration 0.28 \
+  window_animation_easing    ease_out_quint
+
+borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 &
+
