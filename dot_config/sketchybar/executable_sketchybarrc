@@ -26,29 +26,10 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
-source $ITEM_DIR/spaces.sh
+source $ITEM_DIR/spaces.sh # todo redesign
 source $ITEM_DIR/front_app.sh
 source $ITEM_DIR/clock.sh
-# source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
-source $ITEM_DIR/cpu.sh
-# source $ITEM_DIR/music.sh
-
-STATS_SENSORS="Control Center,Sensors_mini"
-STATS_RAM="Control Center,RAM_memory" # TODO build one using vm_stat
-
-                                  
-# sketchybar --add  "$STATS_BATTERY" right \
-sketchybar --set battery background.padding_left=0 \
-                         background.padding_right=0
-sketchybar --add cpu right \
-           --set cpu background.padding_right=0 \
-                     background.padding_left=0
-sketchybar --add alias "$STATS_RAM" right \
-           --set       "$STATS_RAM" label.drawing="off" \
-                                    icon.drawing="off" \
-                                    background.padding_right=0
-sketchybar --add bracket status cpu battery "$STATS_RAM"
 
 sketchybar --hotload true
 
