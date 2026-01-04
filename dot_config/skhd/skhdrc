@@ -3,32 +3,37 @@ alt - t : alacritty msg create-window || alacritty
 alt - b : open --new -a Brave\ Browser --args --new-window
 
 # focus window
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
+#alt - h : yabai -m window --focus west
+#alt - l : yabai -m window --focus east
+#alt - j : yabai -m window --focus south
+#alt - k : yabai -m window --focus north
 #alt - left : yabai -m window --focus west
 #alt - right : yabai -m window --focus east
 #alt - down : yabai -m window --focus south
 #alt - up : yabai -m window --focus north
 
 # move managed window
-shift + alt - h : yabai -m window --swap west
-shift + alt - l : yabai -m window --swap east
-shift + alt - j : yabai -m window --swap south 
-shift + alt - k : yabai -m window --swap north 
-#shift + alt - left : yabai -m window --swap west
-#shift + alt - right : yabai -m window --swap east
-#shift + alt - up : yabai -m window --swap south 
-#shift + alt - down : yabai -m window --swap north 
+shift + ctrl - h : yabai -m window --swap west
+shift + ctrl - l : yabai -m window --swap east
+shift + ctrl - j : yabai -m window --swap south 
+shift + ctrl - k : yabai -m window --swap north 
+shift + ctrl - left : yabai -m window --swap west
+shift + ctrl - right : yabai -m window --swap east
+shift + ctrl - up : yabai -m window --swap south 
+shift + ctrl - down : yabai -m window --swap north 
 
 # balance size of windows
 # shift + alt - 0 : yabai -m space --balance
 
 # snap floating windows
 ctrl + alt - left : yabai -m window --grid 1:2:0:0:1:1
+ctrl + alt - h : yabai -m window --grid 1:2:0:0:1:1
 ctrl + alt - right : yabai -m window --grid 1:2:1:0:1:1
-ctrl + alt - f : yabai -m window --grid 1:1:0:0:1:1
+ctrl + alt - l : yabai -m window --grid 1:2:1:0:1:1
+ctrl + alt - up : yabai -m window --grid 1:1:0:0:1:1
+ctrl + alt - k : yabai -m window --grid 1:1:0:0:1:1
+ctrl + alt - down: yabai -m window --grid 5:5:1:1:3:3
+ctrl + alt - j : yabai -m window --grid 5:5:1:1:3:3
 
 # move window to workspace
 shift + alt - 1  : yabai -m window --space 1; yabai -m space --focus 1
@@ -61,7 +66,7 @@ shift + alt - 0  : yabai -m window --space 10; yabai -m space --focus 0
 #alt - e : yabai -m window --toggle split
 
 # float / unfloat window and center on screen
-alt - v : yabai -m window --toggle float --grid 5:5:1:1:3:3
+# alt - v : yabai -m window --toggle float --grid 5:5:1:1:3:3
 
 # toggle sticky(+float), picture-in-picture
 # alt - p : yabai -m window --toggle sticky --toggle pip

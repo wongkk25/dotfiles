@@ -3,16 +3,16 @@ sudo yabai --load-sa
 
 # looks
 yabai -m config \
-  layout bsp \
-  top_padding    12 \
+  layout float \
+  top_padding    8 \
   bottom_padding 8 \
   left_padding   8 \
   right_padding  8 \
-  window_gap     20 \
-  window_shadow float \
-  focus_follows_mouse autoraise 
-  window_animation_duration 0.28 \
-  window_animation_easing    ease_out_quint
+  window_gap     8 \
+  window_shadow off
+#  focus_follows_mouse autoraise 
+#  window_animation_duration 0.28 \
+#  window_animation_easing    ease_out_quint
 
-borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=2.0 &
+borders active_color=0xffbd93f9 inactive_color=0xff44475a width=4.0 &
 
